@@ -120,6 +120,11 @@ case "$1" in
 	repo_sync $1
 	;;
 
+"bacon")
+	echo DEVICE=bacon >> .tmp-config &&
+	repo_sync $1
+	;;
+
 "flame"|"flame-kk"|"flame-l")
 	echo PRODUCT_NAME=flame >> .tmp-config &&
 	repo_sync $1
